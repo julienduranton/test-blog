@@ -148,6 +148,13 @@ window.onload = wrap_img;
     
 <div class="cell border-box-sizing code_cell rendered">
 
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
 <div class="output_wrapper">
 <div class="output">
 
@@ -156,12 +163,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-c4c9f1aec7c1456fbf9a2db5bae1253c"></div>
+<div id="altair-viz-ee06a599d221476badd5dca598ad13f5"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c4c9f1aec7c1456fbf9a2db5bae1253c") {
-      outputDiv = document.getElementById("altair-viz-c4c9f1aec7c1456fbf9a2db5bae1253c");
+    if (outputDiv.id !== "altair-viz-ee06a599d221476badd5dca598ad13f5") {
+      outputDiv = document.getElementById("altair-viz-ee06a599d221476badd5dca598ad13f5");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -203,7 +210,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": {"type": "point", "filled": true}, "encoding": {"tooltip": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Worldwide_Gross", "scale": {"clamp": true, "domain": [100000, 1000000000]}}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "height": 300, "selection": {"Release Year_": {"type": "single", "bind": {"input": "range", "max": 2018, "min": 1969, "step": 1}, "fields": ["Release_Year"]}}, "title": "Slider Filtering", "transform": [{"calculate": "floor(datum.IMDB_Rating)", "as": "Rounded_IMDB_Rating"}, {"calculate": "datum.Production_Budget > 100000000.0 ? 100 : 10", "as": "Hundred_Million_Production"}, {"calculate": "year(datum.Release_Date)", "as": "Release_Year"}, {"filter": "(datum.IMDB_Rating > 0)"}, {"filter": {"field": "MPAA_Rating", "oneOf": ["G", "NC-17", "PG", "PG-13", "R"]}}, {"filter": {"selection": "Release Year_"}}], "width": 300}, {"mark": {"type": "point", "filled": true}, "encoding": {"tooltip": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Worldwide_Gross", "scale": {"clamp": true, "domain": [100000, 1000000000]}}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "height": 300, "selection": {"Genre": {"type": "single", "fields": ["Major_Genre"], "bind": {"input": "select", "options": ["Action", "Adventure", "Black Comedy", "Comedy", "Concert/Performance", "Documentary", "Drama", "Horror", "Musical", "Romantic Comedy", "Thriller/Suspense", "Western"]}}}, "title": "Dropdown Filtering", "transform": [{"calculate": "floor(datum.IMDB_Rating)", "as": "Rounded_IMDB_Rating"}, {"calculate": "datum.Production_Budget > 100000000.0 ? 100 : 10", "as": "Hundred_Million_Production"}, {"calculate": "year(datum.Release_Date)", "as": "Release_Year"}, {"filter": "(datum.IMDB_Rating > 0)"}, {"filter": {"field": "MPAA_Rating", "oneOf": ["G", "NC-17", "PG", "PG-13", "R"]}}, {"filter": {"selection": "Genre"}}], "width": 300}], "data": {"url": "https://vega.github.io/vega-datasets/data/movies.json", "format": {"parse": {"Release_Date": "date"}}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://vega.github.io/vega-datasets/data/movies.json", "format": {"parse": {"Release_Date": "date"}}}, "mark": {"type": "point", "filled": true}, "encoding": {"tooltip": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Worldwide_Gross", "scale": {"clamp": true, "domain": [100000, 1000000000]}}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "height": 300, "title": "Dropdown Filtering", "transform": [{"calculate": "floor(datum.IMDB_Rating)", "as": "Rounded_IMDB_Rating"}, {"calculate": "datum.Production_Budget > 100000000.0 ? 100 : 10", "as": "Hundred_Million_Production"}, {"calculate": "year(datum.Release_Date)", "as": "Release_Year"}, {"filter": "(datum.IMDB_Rating > 0)"}, {"filter": {"field": "MPAA_Rating", "oneOf": ["G", "NC-17", "PG", "PG-13", "R"]}}, {"filter": "(datum.Major_Genre === 'Drama')"}], "width": 300, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
