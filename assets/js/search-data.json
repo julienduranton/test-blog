@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "import altair as alt from vega_datasets import data movies = alt.UrlData( data.movies.url, format=alt.DataFormat(parse={&quot;Release_Date&quot;:&quot;date&quot;}) ) ratings = [&#39;G&#39;, &#39;NC-17&#39;, &#39;PG&#39;, &#39;PG-13&#39;, &#39;R&#39;] genres = [&#39;Action&#39;, &#39;Adventure&#39;, &#39;Black Comedy&#39;, &#39;Comedy&#39;, &#39;Concert/Performance&#39;, &#39;Documentary&#39;, &#39;Drama&#39;, &#39;Horror&#39;, &#39;Musical&#39;, &#39;Romantic Comedy&#39;, &#39;Thriller/Suspense&#39;, &#39;Western&#39;] base = alt.Chart(movies, width=300, height=300).mark_point(filled=True).transform_calculate( Rounded_IMDB_Rating = &quot;floor(datum.IMDB_Rating)&quot;, Hundred_Million_Production = &quot;datum.Production_Budget &gt; 100000000.0 ? 100 : 10&quot;, Release_Year = &quot;year(datum.Release_Date)&quot; ).transform_filter( alt.datum.IMDB_Rating &gt; 0 ).transform_filter( alt.FieldOneOfPredicate(field=&#39;MPAA_Rating&#39;, oneOf=ratings) ).encode( x=alt.X(&#39;Worldwide_Gross:Q&#39;, scale=alt.Scale(domain=(100000,10**9), clamp=True)), y=&#39;IMDB_Rating:Q&#39;, tooltip=&quot;Title:N&quot; ) # A slider filter year_slider = alt.binding_range(min=1969, max=2018, step=1) slider_selection = alt.selection_single(bind=year_slider, fields=[&#39;Release_Year&#39;], name=&quot;Release Year_&quot;) filter_year = base.add_selection( slider_selection ).transform_filter( slider_selection ).properties(title=&quot;Slider Filtering&quot;) # A dropdown filter genre_dropdown = alt.binding_select(options=genres) genre_select = alt.selection_single(fields=[&#39;Major_Genre&#39;], bind=genre_dropdown, name=&quot;Genre&quot;) filter_genres = base.add_selection( genre_select ).transform_filter( genre_select ).properties(title=&quot;Dropdown Filtering&quot;) ( filter_year | filter_genres) .",
-            "url": "https://julienduranton.github.io/test-blog/2020/04/02/.html",
-            "relUrl": "/2020/04/02/.html",
-            "date": " • Apr 2, 2020"
+            "url": "https://julienduranton.github.io/test-blog/2020/04/03/test_graphs.html",
+            "relUrl": "/2020/04/03/test_graphs.html",
+            "date": " • Apr 3, 2020"
         }
         
     
