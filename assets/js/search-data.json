@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "Test of Altair interactive graphs . Graphs by country .",
+            "content": "Test of Altair interactive graphs . Graphs by country . &lt;function __main__.make_altair_chart(genre)&gt; .",
             "url": "https://julienduranton.github.io/test-blog/2020/04/03/test_graphs.html",
             "relUrl": "/2020/04/03/test_graphs.html",
             "date": " • Apr 3, 2020"
