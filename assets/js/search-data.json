@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Test of Altair interactive graphs",
-            "content": "Data by Country . Select Country, double-click to show all . Data by Sector .",
+            "content": "1- Data by Country . Select Country, double-click to show all . 2- Data by Sector .",
             "url": "https://julienduranton.github.io/test-blog/2020/04/03/test_data.html",
             "relUrl": "/2020/04/03/test_data.html",
             "date": " • Apr 3, 2020"
