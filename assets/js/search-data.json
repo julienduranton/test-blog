@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": ". title: &quot;Economic impact of the covid19 sectoral business closures&quot; summary: &quot;the impact of sector closure on GPD&quot; -toc: true -math: true . -badges: false . Sophie Osotimehin and Latchezar Popov . Visualizations by Julien Duranton .",
+            "title": "Economic impact of the covid19 sectoral business closures",
+            "content": "Sophie Osotimehin and Latchezar Popov . Visualizations by Julien Duranton .",
             "url": "https://julienduranton.github.io/test-blog/2020/04/06/covid-graphs.html",
             "relUrl": "/2020/04/06/covid-graphs.html",
             "date": " • Apr 6, 2020"
