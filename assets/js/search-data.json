@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Test of Altair interactive graphs",
-            "content": "1- Data by Country . 2- Data by Sector . TypeError Traceback (most recent call last) &lt;ipython-input-9-c16f28ce98e3&gt; in &lt;module&gt; 16 ) 17 &gt; 18 HTML(slider) C: ProgramData Anaconda3 envs fastpages_env lib site-packages IPython core display.py in __init__(self, data, url, filename, metadata) 698 return prefix.startswith(&#34;&lt;iframe &#34;) and suffix.endswith(&#34;&lt;/iframe&gt;&#34;) 699 --&gt; 700 if warn(): 701 warnings.warn(&#34;Consider using IPython.display.IFrame instead&#34;) 702 super(HTML, self).__init__(data=data, url=url, filename=filename, metadata=metadata) C: ProgramData Anaconda3 envs fastpages_env lib site-packages IPython core display.py in warn() 694 # long string and we&#39;re only interested in its beginning and end. 695 # --&gt; 696 prefix = data[:10].lower() 697 suffix = data[-10:].lower() 698 return prefix.startswith(&#34;&lt;iframe &#34;) and suffix.endswith(&#34;&lt;/iframe&gt;&#34;) TypeError: &#39;FloatSlider&#39; object is not subscriptable .",
+            "content": "1- Data by Country . 2- Data by Sector . &lt;!DOCTYPE html&gt; Widgets export . .",
             "url": "https://julienduranton.github.io/test-blog/2020/04/03/test_data.html",
             "relUrl": "/2020/04/03/test_data.html",
             "date": " • Apr 3, 2020"
