@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Test of Jinja2 | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Test of Jinja2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="xxx" />
+<meta property="og:description" content="xxx" />
+<link rel="canonical" href="https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html" />
+<meta property="og:url" content="https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-10T00:00:00-05:00","dateModified":"2020-04-10T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html"},"description":"xxx","@type":"BlogPosting","url":"https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html","headline":"Test of Jinja2","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/test-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://julienduranton.github.io/test-blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/test-blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Test of Jinja2 | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Test of Jinja2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="xxx" />
+<meta property="og:description" content="xxx" />
+<link rel="canonical" href="https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html" />
+<meta property="og:url" content="https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-10T00:00:00-05:00","dateModified":"2020-04-10T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html"},"description":"xxx","@type":"BlogPosting","url":"https://julienduranton.github.io/test-blog/2020/04/10/test_jinja2.html","headline":"Test of Jinja2","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://julienduranton.github.io/test-blog/feed.xml" title="fastpages" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/test-blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/test-blog/about/">About Me</a><a class="page-link" href="/test-blog/search/">Search</a><a class="page-link" href="/test-blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Test of Jinja2</h1><p class="page-description">xxx</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-10T00:00:00-05:00" itemprop="datePublished">
+        Apr 10, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/julienduranton/test-blog/tree/master/_notebooks/2020-04-10-test_jinja2.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/test-blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/julienduranton/test-blog/master?filepath=_notebooks%2F2020-04-10-test_jinja2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/test-blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/julienduranton/test-blog/blob/master/_notebooks/2020-04-10-test_jinja2.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/test-blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-04-10-test_jinja2.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1--Data-by-Country">1- Data by Country<a class="anchor-link" href="#1--Data-by-Country"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+</div>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"08a941fdf6cc42158d792ad65830e11f": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "1233c64f14244656963e778ab4893f8a": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "183fc1965d2249fbab27a8985761eb7a": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "19c8638160584d25bfe468c3aec74a3d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_455c846842de449199413070cf520d93", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_08a941fdf6cc42158d792ad65830e11f", "value": 7.4}}, "1c0129ddb1bf4593881a9549742a50e6": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "389a5c0d0a824a4d83c417e7105d825a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_c17b8123b258415c839630bca0decd64", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_8ad92ec10fba4475981ccb72e5a9b8ea", "value": 7.5}}, "424802e9210d47c4ac32f3f3e2c82c79": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_f640c5660902466a829b1072a205ec71", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_1c0129ddb1bf4593881a9549742a50e6", "value": 7.5}}, "43d7c5f9b87947ef88ccaab15eec6c45": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_183fc1965d2249fbab27a8985761eb7a", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_8fb03b4a8cb04a15953e64c58f2690da", "value": 7.5}}, "455c846842de449199413070cf520d93": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "87253b1003d94d5e97a3b4f03fbed803": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "8ad92ec10fba4475981ccb72e5a9b8ea": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "8fb03b4a8cb04a15953e64c58f2690da": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "a044bf09b9e244a79f7c43f69bf87787": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "a3e70595a0e349d6b6bcbb622f1a4427": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_a044bf09b9e244a79f7c43f69bf87787", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_cb92e1fd17024b8eb53c53d3eed90db8", "value": 7.5}}, "c17b8123b258415c839630bca0decd64": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "cb92e1fd17024b8eb53c53d3eed90db8": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"description_width": ""}}, "f640c5660902466a829b1072a205ec71": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "febc651f176d4bd89c1c1a621dd7e82d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"continuous_update": false, "description": "Test:", "layout": "IPY_MODEL_1233c64f14244656963e778ab4893f8a", "max": 10, "readout_format": ".1f", "step": 0.1, "style": "IPY_MODEL_87253b1003d94d5e97a3b4f03fbed803", "value": 7.5}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+
+  </div><a class="u-url" href="/test-blog/2020/04/10/test_jinja2.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/test-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/test-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/test-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/test-blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/test-blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
