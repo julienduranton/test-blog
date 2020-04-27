@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Risks by State",
-            "content": "import altair as alt from vega_datasets import data import pandas as pd root = &quot;C: Users julie Documents GitHub test-blog input_data covid_input regional_effects &quot; data_states = pd.read_excel(root + &quot;regional_effects.xlsx&quot;, sheet_name=&#39;Sheet1&#39;) states = alt.topo_feature(data.us_10m.url, &#39;states&#39;) source_df = pd.read_json(data.income.url) # add State id data_states[&#39;id&#39;] = [source_df[source_df.name == data_states.State[i]].id.values[0] for i in data_states.index.tolist()] data_states = data_states.melt([&#39;State&#39;,&#39;State abbreviation&#39;,&#39;id&#39;], var_name=&#39;risk_type&#39;, value_name=&#39;pct&#39;) .",
+            "content": "",
             "url": "https://julienduranton.github.io/test-blog/2020/04/27/test_chloropeth.html",
             "relUrl": "/2020/04/27/test_chloropeth.html",
             "date": " • Apr 27, 2020"
