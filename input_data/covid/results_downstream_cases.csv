@@ -1,7 +1,7 @@
-Var1,Var2
-21,close_hotel
-22,close_inland_transp
-24,close_air_transp
-33,close_social
-20,close_retail
+﻿Var1,Var2
+21,hotel
+22,inland_transp
+24,air_transp
+33,social
+20,retail
 0,close_all
